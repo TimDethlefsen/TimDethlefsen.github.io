@@ -43,17 +43,7 @@
         <h1 class="title">
           Find out how much Money your Company can save with our excellent Service
         </h1>
-        <div class="columns is-centered ">
-          <div class="column is-2">
-            <a class="button is-fullwidth">1-50</a>
-          </div>
-          <div class="column is-2">
-            <a class="button is-fullwidth">50-200</a>
-          </div>
-          <div class="column is-2">
-            <a class="button is-fullwidth">200+</a>
-          </div>
-        </div>
+        <router-view></router-view>
       </div>
     </div>
   </section>
@@ -187,11 +177,13 @@
 
 <script>
 import ServiceFunnel from './components/ServiceFunnel.vue'
+import ServiceFunnel2 from './components/ServiceFunnel2.vue'
 
 export default {
   name: 'app',
   components: {
-    ServiceFunnel
+    ServiceFunnel,
+    ServiceFunnel2
   }
 }
 </script>
