@@ -15,7 +15,7 @@ Vue.use(Buefy)
 Vue.use(VueRouter)
 
 const routes = [
-  { path: '/service_funnel/', component: ServiceFunnel },
+  { path: '/', component: ServiceFunnel },
   { path: '/service_funnel2/:company', component: ServiceFunnel2 },
 ]
 

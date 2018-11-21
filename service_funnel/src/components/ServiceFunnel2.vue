@@ -1,33 +1,55 @@
 <template>
-<div class="columns is-centered ">
+
+  <div class="container has-text-centered">
+    <h1 class="title has-text-white">
+      We will contact you
+    </h1>
+
+    <div class="columns is-centered ">
+      <div class="column is-4">
+        <div class="field is-grouped">
+          <p class="control is-expanded ">
+            <input class="input" type="text" placeholder="Email">
+          </p>
+          <p class="control">
+            <a class="button is-info">
+              Submit
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---<div class="columns is-centered ">
   <div class="column is-4">
-    <p>
+  <p>
       your company is {{$route.params.company }}
     </p>
+
     <div class="field is-grouped">
       <p class="control is-expanded ">
         <input class="input" type="text" placeholder="Email">
       </p>
       <p class="control">
-        <a class="button is-info is-inverted">
+        <a class="button is-info">
           Submit
         </a>
       </p>
     </div>
   </div>
-</div>
+</div>-->
 </template>
 
 <script>
 export default {
   watch: {
-    '$route' (to, from){
-      alert(to.params.company);
+    '$route' (to){
+    //  alert(to.params.company);
     }
   },
-  created(){
-    alert(this.$route.params.company);
-  }
+  // created(){
+  //  alert(this.$route.params.company);
+  // }
 }
 </script>
 
